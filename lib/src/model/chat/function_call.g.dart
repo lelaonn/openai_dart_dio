@@ -79,8 +79,8 @@ extension _$FunctionCallEquatableAnnotations on FunctionCall {
 // **************************************************************************
 
 FunctionCall _$FunctionCallFromJson(Map<String, dynamic> json) => FunctionCall(
-      name: json['name'] as String,
-      arguments: json['arguments'] as String,
+      name: json['name'] as String? ?? '',
+      arguments: json['arguments'] as String? ?? '',
     );
 
 Map<String, dynamic> _$FunctionCallToJson(FunctionCall instance) =>
